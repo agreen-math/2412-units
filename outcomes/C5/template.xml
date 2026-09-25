@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Given the information below, solve the right triangle for all missing sides and angles.</p>
+        <p>Triangle <m>ABC</m> satisfies <m>\angle A = {{A_val}}^\circ</m>, <m>\angle C = 90^\circ</m>, and <m>{{given_side_name}} = {{given_side_val}}</m>.</p>
+        <p>Round side lengths to the nearest hundredth and angles to the nearest tenth of a degree.</p>
+    </content>
+    <outtro>
+{{{solution_steps}}}
+    </outtro>
+</knowl>

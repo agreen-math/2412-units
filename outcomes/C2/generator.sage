@@ -1,0 +1,113 @@
+from sage.all import *
+from random import randint, choice
+
+class Generator(BaseGenerator):
+    def data(self):
+        found = False
+        while not found:
+            # 1. Randomize base (Strictly 2 or 3)
+            b = choice([2, 3])
+            
+            # 2. Transformations (Locked to pure shifts, no dilations or reflections)
+            H = randint(-8, 8)
+            while H == 0: 
+                H = randint(-8, 8)
+                
+            K = randint(-8, 8)
+            while K == 0: 
+                K = randint(-8, 8)
+                
+            # 3. Visibility Check: Ensure at least 3 integer points fit on a 10x10 grid
+            # For f(x) = log_b(x - H) + K, integer coordinates occur when x - H = b^p 
+            # (which means x = b^p + H) for integer powers p >= 0.
+            visible_points = 0
+            for p in range(0, 6): # Check powers 0 through 5
+                x_val = (b**p) + H
+                y_val = p + K
+                
+                if -10 <= x_val <= 10 and -10 <= y_val <= 10:
+                    visible_points += 1
+                    
+            if visible_points >= 3:
+                found = True
+            
+        # 3. Format Expression
+        if H > 0:
+            inner_str = rf"x - {H}" # Shift Right
+        else:
+            inner_str = rf"x + {abs(H)}" # Shift Left
+            
+        func_part = rf"\log_{{{b}}}({inner_str})"
+            
+        if K > 0:
+            k_str = rf" + {K}"
+        else:
+            k_str = rf" - {abs(K)}"
+            
+        expr = rf"{func_part}{k_str}"
+        
+        # 4. Table Answers
+        h_ref_ans = "NO"
+        h_dil_ans = "1"
+        
+        if H > 0:
+            h_trans_dist = f"{H}"
+            h_trans_dir = "RIGHT"
+        else:
+            h_trans_dist = f"{abs(H)}"
+            h_trans_dir = "LEFT"
+            
+        v_ref_ans = "NO"
+        v_dil_ans = "1"
+        
+        if K > 0:
+            v_trans_dist = f"{K}"
+            v_trans_dir = "UP"
+        else:
+            v_trans_dist = f"{abs(K)}"
+            v_trans_dir = "DOWN"
+
+        # 5. TikZ Graphing Setup
+        grid_setup = r"""
+            \draw[step=1cm, black!60] (-10,-10) grid (10,10);
+            \draw[very thick, <->] (-10.5,0) -- (10.5,0);
+            \draw[very thick, <->] (0,-10.5) -- (0,10.5);
+"""
+        
+        # --- Blank Graph ---
+        graph_blank = r"\begin{tikzpicture}[scale=0.39,>=triangle 45]" + grid_setup + r"\end{tikzpicture}"
+        
+        # --- Solution Graph ---
+        graph_sol = r"\begin{tikzpicture}[scale=0.39,>=triangle 45]" + grid_setup
+        graph_sol += r"\clip (-10.5,-10.5) rectangle (10.5,10.5);"
+        graph_sol += rf"\draw[dashed, red, thick] ({H}, -10.5) -- ({H}, 10.5);"
+        
+        # Domain strictly to the right of the asymptote
+        domain_start = H + 0.01
+        domain_end = 10.5
+        
+        # TikZ natively uses ln(), so we use the change of base formula
+        trans_func_tikz = rf"(ln(\x - ({H}))/ln({b})) + ({K})"
+            
+        graph_sol += rf"\draw[blue, very thick, samples=100, domain={domain_start}:{domain_end}, smooth] plot (\x, {{{trans_func_tikz}}});"
+        graph_sol += r"\end{tikzpicture}"
+
+        # 6. Domain and Range
+        domain_ans = rf"({H}, \infty)"
+        range_ans = r"(-\infty, \infty)"
+
+        return {
+            "expr": expr,
+            "h_ref": h_ref_ans,
+            "h_dil": h_dil_ans,
+            "h_dist": h_trans_dist,
+            "h_dir": h_trans_dir,
+            "v_ref": v_ref_ans,
+            "v_dil": v_dil_ans,
+            "v_dist": v_trans_dist,
+            "v_dir": v_trans_dir,
+            "graph_blank": graph_blank,
+            "graph_sol": graph_sol,
+            "domain": domain_ans,
+            "range": range_ans
+        }

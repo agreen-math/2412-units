@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Use logarithm identities to determine the exact value of the expression, given <m>\log_b(m)={{m_val}}</m>, <m>\log_b(n-1)={{n_val}}</m>, and <m>\log_b(p)={{p_val}}</m>.</p>
+        <p><m>{{expr_latex}}</m></p>
+    </content>
+    <outtro>
+{{{solution_steps}}}
+    </outtro>
+</knowl>

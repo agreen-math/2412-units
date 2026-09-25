@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Suppose a trigonometric function has the attributes given below. Using only the information provided, sketch the <em>transformed wave of interest</em> for the function of your choice. <em>Be careful not to include any changes to the function other than the ones listed.</em></p>
+        <list>
+            <item><p><m>\text{Period} = {{P}}</m></p></item>
+            <item><p><m>\text{Vertical Dilation} = {{A}}</m></p></item>
+            <item><p><m>\text{Phase Shift} = {{h}}</m></p></item>
+        </list>
+    <p>Select <em>one</em> of the following functions to sketch. <em>You MUST indicate your selection to earn credit.</em></p>
+        <list>
+            <item><p>Sine</p></item>
+            <item><p>Cosine</p></item>
+            <item><p>Tangent</p></item>
+        </list>
+    </content>
+    {{{outtro}}}
+</knowl>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Given the information below, solve the triangle. If more than one triangle is possible, find <em>all</em> solutions.</p>
+        <p>Triangle <m>ABC</m> satisfies <m>\angle A = {{A}}^\circ</m>, <m>a = {{a}}</m>, and <m>b = {{b}}</m>.</p>
+        <p>Round sides to the nearest hundredth and angles to the nearest tenth of a degree.</p>
+    </content>
+    <outtro>
+        {{{solution_steps}}}
+    </outtro>
+</knowl>

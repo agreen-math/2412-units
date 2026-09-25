@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>Determine each of the following limits. If the limit does not exist, write <em>DNE</em>.</p>
+    </intro>
+    {{#parts}}
+    <knowl>
+        <content>
+            <p><m>{{lim}}</m></p>
+        </content>
+        <outtro>
+            <p><m>{{sol}}</m></p>
+        </outtro>
+    </knowl>
+    {{/parts}}
+</knowl>

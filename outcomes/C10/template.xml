@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Eliminate the parameter of the pair of parametric equations.</p>
+        <p><m>{{{x_eq}}}</m></p>
+        <p><m>{{{y_eq}}}</m></p>
+    </content>
+    {{{outtro}}}
+</knowl>

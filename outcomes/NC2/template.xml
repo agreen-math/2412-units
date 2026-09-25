@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Give the exact value for each expression. If a value does not exist, write <em>UND</em>.</p>
+        <p>(a) <m>{{q1}} =</m></p>
+        <p>(b) <m>{{q2}} =</m></p>
+        <p>(c) <m>{{q3}} =</m></p>
+        <p>(d) <m>{{q4}} =</m></p>
+        <p>(e) <m>{{q5}} =</m></p>
+        <p>(f) <m>{{q6}} =</m></p>
+    </content>
+    <outtro>
+        {{{solution_steps}}}
+    </outtro>
+</knowl>

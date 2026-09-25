@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bank xmlns="https://checkit.clontz.org" version="0.2">
+    <title>2412 MC Exam Bank</title>
+    <slug>2412-MC</slug>
+    <url>https://github.com/agreen-math/2412-exam</url>
+    <outcomes>
+        <outcome>
+            <title>Diff Quot</title>
+            <slug>C1</slug>
+            <path>outcomes/C1</path>
+            <description>
+                Evaluate and simplify the difference quotient.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Graph Log</title>
+            <slug>C2</slug>
+            <path>outcomes/C2</path>
+            <description>
+                Identify and apply transformations (logarithmic function).
+            </description>
+        </outcome>    
+        <outcome>
+            <title>Solve Exp Log Eq</title>
+            <slug>C3</slug>
+            <path>outcomes/C3</path>
+            <description>
+                Solve exponential and logarithmic equations.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Log ID</title>
+            <slug>C4</slug>
+            <path>outcomes/C4</path>
+            <description>
+                Use logarithm identities to determine the exact value of the expression.
+            </description>
+        </outcome>      
+        <outcome>
+            <title>Right Tri (No Inv)</title>
+            <slug>C5</slug>
+            <path>outcomes/C5</path>
+            <description>
+                Solve a right triangle (not requiring inverse trigonometry).
+            </description>
+        </outcome>   
+        <outcome>
+            <title>Verify ID</title>
+            <slug>C6</slug>
+            <path>outcomes/C6</path>
+            <description>
+                Verify the given identity.
+            </description>
+        </outcome>  
+        <outcome>
+            <title>Solve Trig Eq</title>
+            <slug>C7</slug>
+            <path>outcomes/C7</path>
+            <description>
+                Solve a linear trigonometric equation.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Oblique Tri (SSA 2)</title>
+            <slug>C8</slug>
+            <path>outcomes/C8</path>
+            <description>
+                Solve an oblique triangle using the Law of Sines (Ambiguous 2).
+            </description>
+        </outcome>          
+        <outcome>
+            <title>Tri Apps (SSS Area)</title>
+            <slug>C9</slug>
+            <path>outcomes/C9</path>
+            <description>
+                Solve an oblique triangle using the Law of Sines (Ambiguous 2).
+            </description>
+        </outcome>  
+        <outcome>
+            <title>Elim Parameter</title>
+            <slug>C10</slug>
+            <path>outcomes/C10</path>
+            <description>
+                Eliminate the parameter of the pair of parametric equations.
+            </description>
+        </outcome>  
+        <outcome>
+            <title>Limits</title>
+            <slug>C11</slug>
+            <path>outcomes/C11</path>
+            <description>
+                Determine limits analytically.
+            </description>
+        </outcome>  
+        <outcome>
+            <title>Graph Rational</title>
+            <slug>NC1</slug>
+            <path>outcomes/NC1</path>
+            <description>
+                Graph a rational function given its characteristics.
+            </description>
+        </outcome>  
+        <outcome>
+            <title>Unit Circle Values</title>
+            <slug>NC2</slug>
+            <path>outcomes/NC2</path>
+            <description>
+                Give exact values for trigonometric functions evaluated at angles from the unit circle.
+            </description>
+        </outcome>  
+        <outcome>
+            <title>Unit Circle Backwards</title>
+            <slug>NC3</slug>
+            <path>outcomes/NC3</path>
+            <description>
+                Give exact angle solutions for trigonometric function values from the unit circle.
+            </description>
+        </outcome>  
+        <outcome>
+            <title>Graph Trig</title>
+            <slug>NC4</slug>
+            <path>outcomes/NC4</path>
+            <description>
+                Graph a transformed trigonometric function given its characteristics.
+            </description>
+        </outcome> 
+        <outcome>
+            <title>Find DA from Clues</title>
+            <slug>NC5</slug>
+            <path>outcomes/NC5</path>
+            <description>
+                Use a double-angle identity to find the exact value of a trigonometric function.
+            </description>
+        </outcome> 
+        <outcome>
+            <title>Trig Sub</title>
+            <slug>NC6</slug>
+            <path>outcomes/NC6</path>
+            <description>
+                Write a composition of trigonometric functions as an algebraic expression.
+            </description>
+        </outcome> 
+        <outcome>
+            <title>Solve Trig Eq - Quad</title>
+            <slug>NC7</slug>
+            <path>outcomes/NC7</path>
+            <description>
+                Solve a quadratic trigonometric equation.
+            </description>
+        </outcome> 
+        <outcome>
+            <title>Solve Inverse Trig Eq</title>
+            <slug>NC8</slug>
+            <path>outcomes/NC8</path>
+            <description>
+                Solve an inverse trigonometric equation.
+            </description>
+        </outcome> 
+        <outcome>
+            <title>Plot and Convert Polar Coordinates</title>
+            <slug>NC9</slug>
+            <path>outcomes/NC9</path>
+            <description>
+                Plot a point in polar coordinates and convert between polar and rectangular coordinates.
+            </description>
+        </outcome> 
+        <outcome>
+            <title>Limits Graph</title>
+            <slug>NC10</slug>
+            <path>outcomes/NC10</path>
+            <description>
+                Evaluate limits from the graph of a function.
+            </description>
+        </outcome> 
+    </outcomes>
+</bank>

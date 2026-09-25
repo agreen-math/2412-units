@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>Use the graph of <m>y = f(x)</m> below to answer the following. If a value does not exist, write <em>DNE</em>.</p>
+        <p><m>{{{graph_tikz}}}</m></p>
+    </intro>
+
+    <knowl>
+        <content>
+            <p>Evaluate the following at <m>x = {{c_multi}}</m>:</p>
+            <list>
+                <item><p><m>\displaystyle \lim_{x \to {{c_multi_sub}}^-} f(x)</m></p></item>
+                <item><p><m>\displaystyle \lim_{x \to {{c_multi_sub}}^+} f(x)</m></p></item>
+                <item><p><m>\displaystyle \lim_{x \to {{c_multi_sub}}} f(x)</m></p></item>
+                <item><p><m>f({{c_multi}})</m></p></item>
+            </list>
+        </content>
+        <outtro>
+            <p><m>\displaystyle \lim_{x \to {{c_multi_sub}}^-} f(x) = {{ans_L}}</m></p>
+            <p><m>\displaystyle \lim_{x \to {{c_multi_sub}}^+} f(x) = {{ans_R}}</m></p>
+            <p><m>\displaystyle \lim_{x \to {{c_multi_sub}}} f(x) = {{ans_full}}</m></p>
+            <p><m>f({{c_multi}}) = {{ans_val}}</m></p>
+        </outtro>
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>Evaluate <m>\displaystyle \lim_{x \to {{inf_dir_sub}}} f(x)</m>.</p>
+        </content>
+        <outtro>
+            <p><m>\displaystyle \lim_{x \to {{inf_dir_sub}}} f(x) = {{ans_inf}}</m></p>
+        </outtro>
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>{{{prompt_conceptual}}}</p>
+        </content>
+        <outtro>
+            <p><m>{{ans_conceptual}}</m></p>
+        </outtro>
+    </knowl>
+</knowl>

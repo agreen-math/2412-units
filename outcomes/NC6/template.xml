@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Write <m>{{prompt}}</m> as an algebraic (non-trigonometric) expression in <m>u</m> with <m>u &gt; 0</m>.</p>
+    </content>
+    {{{outtro}}}
+</knowl>

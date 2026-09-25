@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Find all solutions on the interval <m>[0^\circ, 360^\circ)</m>. Round approximate solutions to the nearest tenth of a degree as appropriate.</p>
+        <p><me>{{lhs}} = {{rhs}}</me></p>
+    </content>
+    {{{outtro}}}
+</knowl>

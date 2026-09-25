@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Find all exact values of <m>\theta</m> in the indicated units on the given interval.</p>
+        <p>(a) <m>[0^\circ, 360^\circ): \quad {{q1_stmt}}, \quad \theta = \underline{\hspace{1.2in}}</m></p>
+        <p>(b) <m>[0^\circ, 360^\circ): \quad {{q2_stmt}}, \quad \theta = \underline{\hspace{1.2in}}</m></p>
+        <p>(c) <m>[0^\circ, 360^\circ): \quad {{q3_stmt}}, \quad \theta = \underline{\hspace{1.2in}}</m></p>
+        <p>(d) <m>[0, 2\pi): \quad {{q4_stmt}}, \quad \theta = \underline{\hspace{1.2in}}</m></p>
+        <p>(e) <m>[0, 2\pi): \quad {{q5_stmt}}, \quad \theta = \underline{\hspace{1.2in}}</m></p>
+        <p>(f) <m>[0, 2\pi): \quad {{q6_stmt}}, \quad \theta = \underline{\hspace{1.2in}}</m></p>
+    </content>
+    <outtro>
+        <p><em>Solutions:</em></p>
+        <p>(a) <m>\theta \in \{ {{q1_ans}} \}</m></p>
+        <p>(b) <m>\theta \in \{ {{q2_ans}} \}</m></p>
+        <p>(c) <m>\theta \in \{ {{q3_ans}} \}</m></p>
+        <p>(d) <m>\theta \in \{ {{q4_ans}} \}</m></p>
+        <p>(e) <m>\theta \in \{ {{q5_ans}} \}</m></p>
+        <p>(f) <m>\theta \in \{ {{q6_ans}} \}</m></p>
+    </outtro>
+</knowl>

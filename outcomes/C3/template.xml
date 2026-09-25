@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>Solve each of the following equations. Give exact solutions.</p>
+    </intro>
+    <knowl>
+        <content>
+            <p><m>{{prob_a}}</m></p>
+        </content>
+        <outtro>
+            <p><m>{{step_a}}</m></p>
+            <p><m>{{ans_a}}</m></p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p><m>{{prob_b}}</m></p>
+        </content>
+        <outtro>
+            <p><m>{{step_b}}</m></p>
+            <p><m>{{ans_b}}</m></p>
+        </outtro>
+    </knowl>
+</knowl>
