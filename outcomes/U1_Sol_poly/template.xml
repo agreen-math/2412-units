@@ -1,1 +1,14 @@
-outcomes/U1_Ana_log
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Solve the equation. Give an exact solution.</p>
+        <p><m>\displaystyle {{prob_eq}}</m></p>
+        <p><em>Hint: <m>{{hint_eq}}</m></em></p>
+    </content>
+    <outtro>
+        <p><m>{{step1}}</m></p>
+        <p><m>{{step2}}</m></p>
+        <p><m>{{step3}}</m></p>
+        <p><m>\boxed{ {{final_ans}} }</m></p>
+    </outtro>
+</knowl>

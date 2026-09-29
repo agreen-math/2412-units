@@ -71,7 +71,7 @@
          <outcome>
             <title>App Quad</title>
             <slug>U1_App_quad_zero</slug>
-            <path>outcomes/U1_App_quad_output</path>
+            <path>outcomes/U1_App_quad_zero</path>
             <description>
                 Solve applications involving quadratic functions.
             </description>

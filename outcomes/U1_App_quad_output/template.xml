@@ -1,9 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <content>
-        <p>A {{animal}} is perched on a {{perch}} <m>{{c_val}}</m> {{unit}} above the ground. It hops off the {{perch}} and lands on the ground about <m>{{land_dist}}</m> {{unit}} away. During its hop, its height is given by the equation</p>
-        <p><me>h(x) = {{h_expr}}</me></p>
-        <p>where <m>x</m> is the distance in {{unit}} from the base of the {{perch}}, and <m>h(x)</m> is in {{unit}}. <strong>How far was the {{animal}} from the base of the {{perch}} when it was <m>{{h_target}}</m> {{unit}} above the ground?</strong> Round to the nearest tenth.</p>
+        <p>A {{animal}} is perched on a {{perch}} <m>{{c_val}}</m> {{unit}} above the ground. It hops off the {{perch}} and lands on the ground about <m>{{land_dist}}</m> {{unit}} away. During its hop, its height is given by the equation:</p> <p><me>h(x) = {{h_expr}}</me></p>
+        <p>where <m>x</m> is the distance in {{unit}} from the base of the {{perch}}, and <m>h(x)</m> is in {{unit}}. Set up and solve and equation to determine how far the {{animal}} was from the base of the {{perch}} when it was <m>{{h_target}}</m> {{unit}} above the ground. Round to the nearest tenth.</p>
     </content>
     <outtro>
         <p><m>{{step1}}</m></p>

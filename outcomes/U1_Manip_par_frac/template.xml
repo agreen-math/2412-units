@@ -8,6 +8,11 @@
         <p><m>{{step1}}</m></p>
         <p><m>{{step2}}</m></p>
         <p><m>{{step3}}</m></p>
+        <p>**OR**</p>
+        <p><m>{{step1}}</m></p>
+        <p><m>{{sys_expand}}</m></p>
+        <p><m>{{sys_eq1}}</m></p>
+        <p><m>{{sys_eq2}}</m></p>
         <p><m>\boxed{ {{final_ans}} }</m></p>
     </outtro>
 </knowl>

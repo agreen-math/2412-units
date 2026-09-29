@@ -36,6 +36,12 @@ class Generator(BaseGenerator):
         step3_rhs = fac2(x=r1) * A
         step3 = rf"x = {r1} \implies {latex(step3_lhs)} = {latex(step3_rhs)} \implies A = {ans_A}"
         
+        sys_expand = num == A*x - r2*A + B*x - r1*B
+        c1 = num.coefficient(x, 1)
+        c0 = num.coefficient(x, 0)
+        sys_eq1 = A + B == c1
+        sys_eq2 = -r2*A - r1*B == c0
+        
         final_ans = rf"A = {ans_A}, \quad B = {ans_B}"
 
         return {
@@ -43,5 +49,8 @@ class Generator(BaseGenerator):
             "step1": step1,
             "step2": step2,
             "step3": step3,
+            "sys_expand": latex(sys_expand),
+            "sys_eq1": latex(sys_eq1),
+            "sys_eq2": latex(sys_eq2),
             "final_ans": final_ans
         }

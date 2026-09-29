@@ -17,6 +17,13 @@ class Generator(BaseGenerator):
             if val == -1: return rf"-\ln({base})"
             return rf"{val}\ln({base})"
 
+        def fmt_clog(c, base_arg, base_sub, absolute=False):
+            val = abs(c) if absolute else c
+            log_str = rf"\log_{{{base_sub}}}({base_arg})"
+            if val == 1: return log_str
+            if val == -1: return rf"-{log_str}"
+            return rf"{val}{log_str}"
+
         def fmt_c(c, absolute=False):
             val = abs(c) if absolute else c
             if val == 1: return ""
@@ -72,8 +79,15 @@ class Generator(BaseGenerator):
         lhs_fac_inner = rf"{fmt_c(c1)}\ln({b1}){opp_sign_c2}{fmt_c(abs(c2), True)}\ln({b2})"
         step5 = rf"x({lhs_fac_inner}) = {rhs_iso}"
 
-        # Step 6: Final Answer
-        final_ans = rf"x = \frac{{{rhs_iso}}}{{{lhs_fac_inner}}}"
+        # Formulate equivalent solutions using specific bases
+        num_b1 = rf"{fmt_clog(d2, b2, b1)}{opp_sign_d1}{abs(d1)}"
+        den_b1 = rf"{c1}{opp_sign_c2}{fmt_clog(abs(c2), b2, b1)}"
+
+        num_b2 = rf"{d2}{opp_sign_d1}{fmt_clog(abs(d1), b1, b2)}"
+        den_b2 = rf"{fmt_clog(c1, b1, b2)}{opp_sign_c2}{abs(c2)}"
+
+        # Step 6: Final Answer with equivalent log expressions
+        final_ans = rf"x = \frac{{{rhs_iso}}}{{{lhs_fac_inner}}} = \frac{{{num_b1}}}{{{den_b1}}} = \frac{{{num_b2}}}{{{den_b2}}}"
 
         return {
             "prob_eq": prob_eq,
