@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>Fill in the table below with the zeros of the polynomial, their multiplicities and the behavior of the graph of the function around each zero. You may or may not use all of the rows in the table.</p>
+    <p><me>f(x) = {{poly}}</me></p>
+    </intro>
+    <content>
+        <p>
+            <me>
+                \begin{array}{|c|c|c|}
+                    \hline
+                    \rule[-0.8em]{0pt}{2.2em} \textbf{Zero} &amp; \textbf{Multiplicity} &amp; \textbf{Behavior} \\ \hline
+{{blank_rows}}                \end{array}
+            </me>
+        </p>
+    </content>
+    <outtro>
+        <p>Solution</p>
+        <p><me>{{steps}}</me></p>
+        <p>
+            <me>
+                \begin{array}{|c|c|c|}
+                    \hline
+                    \rule[-0.8em]{0pt}{2.2em} \textbf{Zero} &amp; \textbf{Multiplicity} &amp; \textbf{Behavior} \\ \hline
+{{sol_rows}}                \end{array}
+            </me>
+        </p>
+    </outtro>
+</knowl>

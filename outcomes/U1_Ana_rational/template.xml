@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Find each of the following for the given rational function. If it does not exist, write <em>none</em>.</p>
+        <p><m>\displaystyle f(x) = {{f_expr}} = {{f_fact}}</m></p>
+        <p>
+            <m>\displaystyle
+            \begin{array}{|r|l|}
+                \hline
+                \rule[-1.2em]{0pt}{3em} \text{domain} &amp; \text{\hspace{6cm}} \\ \hline
+                \rule[-1.2em]{0pt}{3em} \text{hole(s)} &amp; \\ \hline
+                \rule[-1.2em]{0pt}{3em} \text{vertical asymptote(s)} &amp; \\ \hline
+                \rule[-1.2em]{0pt}{3em} \text{horizontal asymptote} &amp; \\ \hline
+                \rule[-1.2em]{0pt}{3em} \text{oblique asymptote} &amp; \\ \hline
+                \rule[-1.2em]{0pt}{3em} y\text{-intercept} &amp; \\ \hline
+                \rule[-1.2em]{0pt}{3em} x\text{-intercept(s)} &amp; \\ \hline
+            \end{array}
+            </m>
+        </p>
+    </content>
+    <outtro>
+        <p>
+            <m>\displaystyle
+            \begin{array}{|r|l|}
+                \hline
+                \rule[-1.2em]{0pt}{3em} \text{domain} &amp; {{domain_ans}} \\ \hline
+                \rule[-1.2em]{0pt}{3em} \text{hole(s)} &amp; {{hole_ans}} \\ \hline
+                \rule[-1.2em]{0pt}{3em} \text{vertical asymptote(s)} &amp; {{va_ans}} \\ \hline
+                \rule[-1.2em]{0pt}{3em} \text{horizontal asymptote} &amp; {{ha_ans}} \\ \hline
+                \rule[-1.2em]{0pt}{3em} \text{oblique asymptote} &amp; {{oa_ans}} \\ \hline
+                \rule[-1.2em]{0pt}{3em} y\text{-intercept} &amp; {{y_int_ans}} \\ \hline
+                \rule[-1.2em]{0pt}{3em} x\text{-intercept(s)} &amp; {{x_int_ans}} \\ \hline
+            \end{array}
+            </m>
+        </p>
+    </outtro>
+</knowl>

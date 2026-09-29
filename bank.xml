@@ -1,176 +1,160 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <bank xmlns="https://checkit.clontz.org" version="0.2">
-    <title>2412 MC Exam Bank</title>
+    <title>2412 Unit 1 Exam Bank</title>
     <slug>2412-MC</slug>
-    <url>https://github.com/agreen-math/2412-exam</url>
+    <url>https://github.com/agreen-math/2412-units</url>
     <outcomes>
         <outcome>
             <title>Diff Quot</title>
-            <slug>C1</slug>
-            <path>outcomes/C1</path>
+            <slug>U1_Ana_diff_quot</slug>
+            <path>outcomes/U1_Ana_diff_quot</path>
             <description>
                 Evaluate and simplify the difference quotient.
             </description>
         </outcome>
         <outcome>
-            <title>Graph Log</title>
-            <slug>C2</slug>
-            <path>outcomes/C2</path>
+            <title>Ana Exp</title>
+            <slug>U1_Ana_exp</slug>
+            <path>outcomes/U1_Ana_exp</path>
             <description>
-                Identify and apply transformations (logarithmic function).
-            </description>
-        </outcome>    
-        <outcome>
-            <title>Solve Exp Log Eq</title>
-            <slug>C3</slug>
-            <path>outcomes/C3</path>
-            <description>
-                Solve exponential and logarithmic equations.
+                Analyze an exponential function.
             </description>
         </outcome>
         <outcome>
-            <title>Log ID</title>
-            <slug>C4</slug>
-            <path>outcomes/C4</path>
+            <title>Ana Log</title>
+            <slug>U1_Ana_log</slug>
+            <path>outcomes/U1_Ana_log</path>
+            <description>
+                Analyze a logarithmic function.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Ana Inverse</title>
+            <slug>U1_Ana_inverse</slug>
+            <path>outcomes/U1_Ana_inverse</path>
+            <description>
+                Find the inverse of a one-to-one function.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Ana Poly</title>
+            <slug>U1_Ana_poly_zeros</slug>
+            <path>outcomes/U1_Ana_poly_zeros</path>
+            <description>
+                Analyze the zeros of a polynomial function.
+            </description>
+        </outcome>
+         <outcome>
+            <title>Ana Rational</title>
+            <slug>U1_Ana_rational</slug>
+            <path>outcomes/U1_Ana_rational</path>
+            <description>
+                Analyze a rational function.
+            </description>
+        </outcome>
+         <outcome>
+            <title>App Exp</title>
+            <slug>U1_App_exp</slug>
+            <path>outcomes/U1_App_exp</path>
+            <description>
+                Solve applications involving exponential functions.
+            </description>
+        </outcome>
+         <outcome>
+            <title>App Quad</title>
+            <slug>U1_App_quad_output</slug>
+            <path>outcomes/U1_App_quad_output</path>
+            <description>
+                Solve applications involving quadratic functions.
+            </description>
+        </outcome>
+         <outcome>
+            <title>App Quad</title>
+            <slug>U1_App_quad_zero</slug>
+            <path>outcomes/U1_App_quad_output</path>
+            <description>
+                Solve applications involving quadratic functions.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Manip Log ID Condense</title>
+            <slug>U1_Manip_log_id_condense</slug>
+            <path>outcomes/U1_Manip_log_id_condense</path>
+            <description>
+                Use logarithm identities to condense or expand logarithmic expressions.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Manip Log ID Expand</title>
+            <slug>U1_Manip_log_id_expand</slug>
+            <path>outcomes/U1_Manip_log_id_expand</path>
+            <description>
+                Use logarithm identities to condense or expand logarithmic expressions.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Manip Log ID</title>
+            <slug>U1_Manip_log_id_weird</slug>
+            <path>outcomes/U1_Manip_log_id_weird</path>
             <description>
                 Use logarithm identities to determine the exact value of the expression.
             </description>
         </outcome>      
         <outcome>
-            <title>Right Tri (No Inv)</title>
-            <slug>C5</slug>
-            <path>outcomes/C5</path>
+            <title>Manip Par Frac</title>
+            <slug>U1_Manip_par_frac</slug>
+            <path>outcomes/U1_Manip_par_frac</path>
             <description>
-                Solve a right triangle (not requiring inverse trigonometry).
+                Find the unknowns on the right side of the partial fraction decomposition.
             </description>
-        </outcome>   
+        </outcome>      
         <outcome>
-            <title>Verify ID</title>
-            <slug>C6</slug>
-            <path>outcomes/C6</path>
+            <title>Solve Exp Log Eq</title>
+            <slug>U1_Sol_exp_constant</slug>
+            <path>outcomes/U1_Sol_exp_constant</path>
             <description>
-                Verify the given identity.
-            </description>
-        </outcome>  
-        <outcome>
-            <title>Solve Trig Eq</title>
-            <slug>C7</slug>
-            <path>outcomes/C7</path>
-            <description>
-                Solve a linear trigonometric equation.
+                Solve exponential and logarithmic equations.
             </description>
         </outcome>
         <outcome>
-            <title>Oblique Tri (SSA 2)</title>
-            <slug>C8</slug>
-            <path>outcomes/C8</path>
+            <title>Solve Exp Log Eq</title>
+            <slug>U1_Sol_exp_diff</slug>
+            <path>outcomes/U1_Sol_exp_diff</path>
             <description>
-                Solve an oblique triangle using the Law of Sines (Ambiguous 2).
+                Solve exponential and logarithmic equations.
             </description>
-        </outcome>          
+        </outcome>
         <outcome>
-            <title>Tri Apps (SSS Area)</title>
-            <slug>C9</slug>
-            <path>outcomes/C9</path>
+            <title>Solve Exp Log Eq</title>
+            <slug>U1_Sol_exp_match</slug>
+            <path>outcomes/U1_Sol_exp_match</path>
             <description>
-                Solve an oblique triangle using the Law of Sines (Ambiguous 2).
+                Solve exponential and logarithmic equations.
             </description>
-        </outcome>  
+        </outcome>
         <outcome>
-            <title>Elim Parameter</title>
-            <slug>C10</slug>
-            <path>outcomes/C10</path>
+            <title>Solve Exp Log Eq</title>
+            <slug>U1_Sol_log_constant</slug>
+            <path>outcomes/U1_Sol_log_constant</path>
             <description>
-                Eliminate the parameter of the pair of parametric equations.
+                Solve exponential and logarithmic equations.
             </description>
-        </outcome>  
+        </outcome>
         <outcome>
-            <title>Limits</title>
-            <slug>C11</slug>
-            <path>outcomes/C11</path>
+            <title>Solve Exp Log Eq</title>
+            <slug>U1_Sol_log_match</slug>
+            <path>outcomes/U1_Sol_log_match</path>
             <description>
-                Determine limits analytically.
+                Solve exponential and logarithmic equations.
             </description>
-        </outcome>  
+        </outcome>
         <outcome>
-            <title>Graph Rational</title>
-            <slug>NC1</slug>
-            <path>outcomes/NC1</path>
+            <title>Solve Poly</title>
+            <slug>U1_Sol_poly</slug>
+            <path>outcomes/U1_Sol_poly</path>
             <description>
-                Graph a rational function given its characteristics.
+                Solve polynomial equations.
             </description>
-        </outcome>  
-        <outcome>
-            <title>Unit Circle Values</title>
-            <slug>NC2</slug>
-            <path>outcomes/NC2</path>
-            <description>
-                Give exact values for trigonometric functions evaluated at angles from the unit circle.
-            </description>
-        </outcome>  
-        <outcome>
-            <title>Unit Circle Backwards</title>
-            <slug>NC3</slug>
-            <path>outcomes/NC3</path>
-            <description>
-                Give exact angle solutions for trigonometric function values from the unit circle.
-            </description>
-        </outcome>  
-        <outcome>
-            <title>Graph Trig</title>
-            <slug>NC4</slug>
-            <path>outcomes/NC4</path>
-            <description>
-                Graph a transformed trigonometric function given its characteristics.
-            </description>
-        </outcome> 
-        <outcome>
-            <title>Find DA from Clues</title>
-            <slug>NC5</slug>
-            <path>outcomes/NC5</path>
-            <description>
-                Use a double-angle identity to find the exact value of a trigonometric function.
-            </description>
-        </outcome> 
-        <outcome>
-            <title>Trig Sub</title>
-            <slug>NC6</slug>
-            <path>outcomes/NC6</path>
-            <description>
-                Write a composition of trigonometric functions as an algebraic expression.
-            </description>
-        </outcome> 
-        <outcome>
-            <title>Solve Trig Eq - Quad</title>
-            <slug>NC7</slug>
-            <path>outcomes/NC7</path>
-            <description>
-                Solve a quadratic trigonometric equation.
-            </description>
-        </outcome> 
-        <outcome>
-            <title>Solve Inverse Trig Eq</title>
-            <slug>NC8</slug>
-            <path>outcomes/NC8</path>
-            <description>
-                Solve an inverse trigonometric equation.
-            </description>
-        </outcome> 
-        <outcome>
-            <title>Plot and Convert Polar Coordinates</title>
-            <slug>NC9</slug>
-            <path>outcomes/NC9</path>
-            <description>
-                Plot a point in polar coordinates and convert between polar and rectangular coordinates.
-            </description>
-        </outcome> 
-        <outcome>
-            <title>Limits Graph</title>
-            <slug>NC10</slug>
-            <path>outcomes/NC10</path>
-            <description>
-                Evaluate limits from the graph of a function.
-            </description>
-        </outcome> 
+        </outcome>
     </outcomes>
 </bank>

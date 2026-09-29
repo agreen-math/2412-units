@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Use properties of logarithms to rewrite the expression as a single logarithm. Express all factors as powers.</p>
+        <p><m>{{expr}}</m></p>
+    </content>
+    <outtro>
+        <p><m>{{step1}}</m></p>
+        <p><m>{{step2}}</m></p>
+        <p><m>\boxed{ {{ans}} }</m></p>
+    </outtro>
+</knowl>

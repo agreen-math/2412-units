@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Find each of the following for the given function.</p>
+        <p><m>\displaystyle f(x) = {{f_expr}}</m></p>
+        <p>
+            <m>\displaystyle
+            \begin{array}{|r|l|}
+                \hline
+                \rule[-1.2em]{0pt}{3em} \text{domain} &amp; \text{\hspace{4cm}} \\ \hline
+                \rule[-1.2em]{0pt}{3em} \text{range} &amp; \\ \hline
+                \rule[-1.2em]{0pt}{3em} \text{asymptote} &amp; \\ \hline
+            \end{array}
+            </m>
+        </p>
+    </content>
+    <outtro>
+        <p>
+            <m>\displaystyle
+            \begin{array}{|r|l|}
+                \hline
+                \rule[-1.2em]{0pt}{3em} \text{domain} &amp; {{domain_ans}} \\ \hline
+                \rule[-1.2em]{0pt}{3em} \text{range} &amp; {{range_ans}} \\ \hline
+                \rule[-1.2em]{0pt}{3em} \text{asymptote} &amp; {{asym_ans}} \\ \hline
+            \end{array}
+            </m>
+        </p>
+    </outtro>
+</knowl>

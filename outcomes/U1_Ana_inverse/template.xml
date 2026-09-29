@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+            Given that the function is one-to-one, find the inverse function <m>f^{-1}(x)</m>.
+        </p>
+    </intro>
+    <content>
+        <p>
+            <m>{{equation}}</m>
+        </p>
+    </content>
+    <outtro>
+        <p>Solution</p>
+        <p>
+            <m>y = {{equation_rhs}}</m>
+        </p>
+        <p>
+            <m>{{step_swap}}</m>
+        </p>
+        <p>
+            <m>{{step_isolate}}</m>
+        </p>
+        <p>
+            <m>{{step_cube}}</m>
+        </p>
+        <p>
+            <m>{{step_solve}}</m>
+        </p>
+        <p>
+            <m>\boxed{ {{factored_ans}} }</m>
+        </p>
+        <p>
+            **OR**
+        </p>
+        <p>
+            <m>= {{exp_step1}}</m>
+        </p>
+        <p>
+            <m>\boxed{ {{expanded_ans}} }</m>
+        </p>
+    </outtro>
+</knowl>
