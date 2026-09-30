@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Your unique quiz code is provided below. Please record this exact code on your scratch paper in the blank provided.</p>
+        <p><c>U1AN-{{unique_id}}</c></p>
+    </content>
+    <outtro>
+        <p><m>\text{U1AN-{{unique_id}}}</m></p>
+    </outtro>
+</knowl>

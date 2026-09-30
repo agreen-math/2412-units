@@ -156,5 +156,37 @@
                 Solve polynomial equations.
             </description>
         </outcome>
+        <outcome>
+            <title>Quiz Code</title>
+            <slug>U1_Ana</slug>
+            <path>outcomes/U1_Ana</path>
+            <description>
+                Unique Quiz Code.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Quiz Code</title>
+            <slug>U1_App</slug>
+            <path>outcomes/U1_App</path>
+            <description>
+                Unique Quiz Code.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Quiz Code</title>
+            <slug>U1_Manip</slug>
+            <path>outcomes/U1_Manip</path>
+            <description>
+                Unique Quiz Code.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Quiz Code</title>
+            <slug>U1_Sol</slug>
+            <path>outcomes/U1_Sol</path>
+            <description>
+                Unique Quiz Code.
+            </description>
+        </outcome>
     </outcomes>
 </bank>
