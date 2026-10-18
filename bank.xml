@@ -1,189 +1,30 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <bank xmlns="https://checkit.clontz.org" version="0.2">
-    <title>2412 Unit 1 Exam Bank</title>
+    <title>2412 Unit 2 Exam Bank</title>
     <slug>2412-MC</slug>
     <url>https://github.com/agreen-math/2412-units</url>
     <outcomes>
         <outcome>
-            <title>Diff Quot</title>
-            <slug>U1_Ana_diff_quot</slug>
-            <path>outcomes/U1_Ana_diff_quot</path>
+            <title>Linear and Angular Speed</title>
+            <slug>U2_App_lin_ang_speed</slug>
+            <path>outcomes/U2_App_lin_ang_speed</path>
             <description>
-                Evaluate and simplify the difference quotient.
+                Convert from angular to linear speed.
             </description>
         </outcome>
         <outcome>
-            <title>Ana Exp</title>
-            <slug>U1_Ana_exp</slug>
-            <path>outcomes/U1_Ana_exp</path>
+            <title>Sector Area and Arc Length</title>
+            <slug>U2_App_sector</slug>
+            <path>outcomes/U2_App_sector</path>
             <description>
-                Analyze an exponential function.
+                Determine sector area and arc length.
             </description>
         </outcome>
-        <outcome>
-            <title>Ana Log</title>
-            <slug>U1_Ana_log</slug>
-            <path>outcomes/U1_Ana_log</path>
-            <description>
-                Analyze a logarithmic function.
-            </description>
-        </outcome>
-        <outcome>
-            <title>Ana Inverse</title>
-            <slug>U1_Ana_inverse</slug>
-            <path>outcomes/U1_Ana_inverse</path>
-            <description>
-                Find the inverse of a one-to-one function.
-            </description>
-        </outcome>
-        <outcome>
-            <title>Ana Poly</title>
-            <slug>U1_Ana_poly_zeros</slug>
-            <path>outcomes/U1_Ana_poly_zeros</path>
-            <description>
-                Analyze the zeros of a polynomial function.
-            </description>
-        </outcome>
-         <outcome>
-            <title>Ana Rational</title>
-            <slug>U1_Ana_rational</slug>
-            <path>outcomes/U1_Ana_rational</path>
-            <description>
-                Analyze a rational function.
-            </description>
-        </outcome>
-         <outcome>
-            <title>App Exp</title>
-            <slug>U1_App_exp</slug>
-            <path>outcomes/U1_App_exp</path>
-            <description>
-                Solve applications involving exponential functions.
-            </description>
-        </outcome>
-         <outcome>
-            <title>App Quad</title>
-            <slug>U1_App_quad_output</slug>
-            <path>outcomes/U1_App_quad_output</path>
-            <description>
-                Solve applications involving quadratic functions.
-            </description>
-        </outcome>
-         <outcome>
-            <title>App Quad</title>
-            <slug>U1_App_quad_zero</slug>
-            <path>outcomes/U1_App_quad_zero</path>
-            <description>
-                Solve applications involving quadratic functions.
-            </description>
-        </outcome>
-        <outcome>
-            <title>Manip Log ID Condense</title>
-            <slug>U1_Manip_log_id_condense</slug>
-            <path>outcomes/U1_Manip_log_id_condense</path>
-            <description>
-                Use logarithm identities to condense or expand logarithmic expressions.
-            </description>
-        </outcome>
-        <outcome>
-            <title>Manip Log ID Expand</title>
-            <slug>U1_Manip_log_id_expand</slug>
-            <path>outcomes/U1_Manip_log_id_expand</path>
-            <description>
-                Use logarithm identities to condense or expand logarithmic expressions.
-            </description>
-        </outcome>
-        <outcome>
-            <title>Manip Log ID</title>
-            <slug>U1_Manip_log_id_weird</slug>
-            <path>outcomes/U1_Manip_log_id_weird</path>
-            <description>
-                Use logarithm identities to determine the exact value of the expression.
-            </description>
-        </outcome>      
-        <outcome>
-            <title>Manip Par Frac</title>
-            <slug>U1_Manip_par_frac</slug>
-            <path>outcomes/U1_Manip_par_frac</path>
-            <description>
-                Find the unknowns on the right side of the partial fraction decomposition.
-            </description>
-        </outcome>      
-        <outcome>
-            <title>Solve Exp Log Eq</title>
-            <slug>U1_Sol_exp_constant</slug>
-            <path>outcomes/U1_Sol_exp_constant</path>
-            <description>
-                Solve exponential and logarithmic equations.
-            </description>
-        </outcome>
-        <outcome>
-            <title>Solve Exp Log Eq</title>
-            <slug>U1_Sol_exp_diff</slug>
-            <path>outcomes/U1_Sol_exp_diff</path>
-            <description>
-                Solve exponential and logarithmic equations.
-            </description>
-        </outcome>
-        <outcome>
-            <title>Solve Exp Log Eq</title>
-            <slug>U1_Sol_exp_match</slug>
-            <path>outcomes/U1_Sol_exp_match</path>
-            <description>
-                Solve exponential and logarithmic equations.
-            </description>
-        </outcome>
-        <outcome>
-            <title>Solve Exp Log Eq</title>
-            <slug>U1_Sol_log_constant</slug>
-            <path>outcomes/U1_Sol_log_constant</path>
-            <description>
-                Solve exponential and logarithmic equations.
-            </description>
-        </outcome>
-        <outcome>
-            <title>Solve Exp Log Eq</title>
-            <slug>U1_Sol_log_match</slug>
-            <path>outcomes/U1_Sol_log_match</path>
-            <description>
-                Solve exponential and logarithmic equations.
-            </description>
-        </outcome>
-        <outcome>
-            <title>Solve Poly</title>
-            <slug>U1_Sol_poly</slug>
-            <path>outcomes/U1_Sol_poly</path>
-            <description>
-                Solve polynomial equations.
-            </description>
-        </outcome>
+
         <outcome>
             <title>Quiz Code</title>
-            <slug>U1_Ana</slug>
-            <path>outcomes/U1_Ana</path>
-            <description>
-                Unique Quiz Code.
-            </description>
-        </outcome>
-        <outcome>
-            <title>Quiz Code</title>
-            <slug>U1_App</slug>
-            <path>outcomes/U1_App</path>
-            <description>
-                Unique Quiz Code.
-            </description>
-        </outcome>
-        <outcome>
-            <title>Quiz Code</title>
-            <slug>U1_Manip</slug>
-            <path>outcomes/U1_Manip</path>
-            <description>
-                Unique Quiz Code.
-            </description>
-        </outcome>
-        <outcome>
-            <title>Quiz Code</title>
-            <slug>U1_Sol</slug>
-            <path>outcomes/U1_Sol</path>
+            <slug>U2_App</slug>
+            <path>outcomes/U2_App</path>
             <description>
                 Unique Quiz Code.
             </description>
