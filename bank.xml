@@ -13,6 +13,38 @@
             </description>
         </outcome>
         <outcome>
+            <title>Linear and Angular Speed v1</title>
+            <slug>U2_App_lin_ang_speed_v1</slug>
+            <path>outcomes/U2_App_lin_ang_speed_v1</path>
+            <description>
+                Convert from angular to linear speed.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Linear and Angular Speed v2</title>
+            <slug>U2_App_lin_ang_speed_v2</slug>
+            <path>outcomes/U2_App_lin_ang_speed_v2</path>
+            <description>
+                Convert from angular to linear speed.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Linear and Angular Speed v3</title>
+            <slug>U2_App_lin_ang_speed_v3</slug>
+            <path>outcomes/U2_App_lin_ang_speed_v3</path>
+            <description>
+                Convert from angular to linear speed.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Linear and Angular Speed v4</title>
+            <slug>U2_App_lin_ang_speed_v4</slug>
+            <path>outcomes/U2_App_lin_ang_speed_v4</path>
+            <description>
+                Convert from angular to linear speed.
+            </description>
+        </outcome>
+        <outcome>
             <title>Sector Area and Arc Length</title>
             <slug>U2_App_sector</slug>
             <path>outcomes/U2_App_sector</path>
@@ -20,11 +52,131 @@
                 Determine sector area and arc length.
             </description>
         </outcome>
+        <outcome>
+            <title>Sector Area and Arc Length v1</title>
+            <slug>U2_App_sector_v1</slug>
+            <path>outcomes/U2_App_sector_v1</path>
+            <description>
+                Determine sector area and arc length.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Sector Area and Arc Length v2</title>
+            <slug>U2_App_sector_v2</slug>
+            <path>outcomes/U2_App_sector_v2</path>
+            <description>
+                Determine sector area and arc length.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Sector Area and Arc Length v3</title>
+            <slug>U2_App_sector_v3</slug>
+            <path>outcomes/U2_App_sector_v3</path>
+            <description>
+                Determine sector area and arc length.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Fund Ident Simplify</title>
+            <slug>U2_Manip_simplify</slug>
+            <path>outcomes/U2_Manip_simplify</path>
+            <description>
+                Use fundamental identities to simplify.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Fund Ident Simplify v1</title>
+            <slug>U2_Manip_simplify_v1</slug>
+            <path>outcomes/U2_Manip_simplify_v1</path>
+            <description>
+                Use fundamental identities to simplify.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Fund Ident Simplify v2</title>
+            <slug>U2_Manip_simplify_v2</slug>
+            <path>outcomes/U2_Manip_simplify_v2</path>
+            <description>
+                Use fundamental identities to simplify.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Fund Ident Simplify v3</title>
+            <slug>U2_Manip_simplify_v3</slug>
+            <path>outcomes/U2_Manip_simplify_v3</path>
+            <description>
+                Use fundamental identities to simplify.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Fund Ident Simplify v4</title>
+            <slug>U2_Manip_simplify_v4</slug>
+            <path>outcomes/U2_Manip_simplify_v4</path>
+            <description>
+                Use fundamental identities to simplify.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Fund Ident Simplify v5</title>
+            <slug>U2_Manip_simplify_v5</slug>
+            <path>outcomes/U2_Manip_simplify_v5</path>
+            <description>
+                Use fundamental identities to simplify.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Fund Ident Simplify v6</title>
+            <slug>U2_Manip_simplify_v6</slug>
+            <path>outcomes/U2_Manip_simplify_v6</path>
+            <description>
+                Use fundamental identities to simplify.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Fund Ident Simplify v7</title>
+            <slug>U2_Manip_simplify_v7</slug>
+            <path>outcomes/U2_Manip_simplify_v7</path>
+            <description>
+                Use fundamental identities to simplify.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Find Trig from Clues</title>
+            <slug>U2_Manip_clues</slug>
+            <path>outcomes/U2_Manip_clues</path>
+            <description>
+                Find one trig function value given another and a quadrant.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Find Trig from Clues_v1</title>
+            <slug>U2_Manip_clues_v1</slug>
+            <path>outcomes/U2_Manip_clues_v1</path>
+            <description>
+                Find one trig function value given another and a quadrant.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Find Trig from Clues_v2</title>
+            <slug>U2_Manip_clues_v2</slug>
+            <path>outcomes/U2_Manip_clues_v2</path>
+            <description>
+                Find one trig function value given another and a quadrant.
+            </description>
+        </outcome>
 
         <outcome>
             <title>Quiz Code</title>
             <slug>U2_App</slug>
             <path>outcomes/U2_App</path>
+            <description>
+                Unique Quiz Code.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Quiz Code</title>
+            <slug>U2_Manip</slug>
+            <path>outcomes/U2_Manip</path>
             <description>
                 Unique Quiz Code.
             </description>

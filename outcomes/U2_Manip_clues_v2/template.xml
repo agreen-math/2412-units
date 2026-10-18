@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Find <m>{{target}}</m>, given that <m>{{given}}</m> and <m>\theta</m> is in quadrant {{quadrant}}.</p>
+    </content>
+    {{{outtro}}}
+</knowl>

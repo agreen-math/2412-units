@@ -1,12 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <content>
-        <p>{{{scenario_text}}}</p>
-        <p>(a) Sketch and label a diagram of the {{region}}.</p>
-        <p>(b) A {{professional}} charges <m>\${{rate}}</m> per square {{unit}} to {{rate_action}}. What is the total cost to {{short_action}} the {{region}}?</p>
-        <p>(c) {{length_task}}</p>
+        <p>Use fundamental trigonometric identities to simplify the expression in terms of a single trigonometric function or a constant.</p>
+        <p><me>{{expr}}</me></p>
     </content>
-    <outtro>
-{{{solution_steps}}}
-    </outtro>
+    {{{outtro}}}
 </knowl>
