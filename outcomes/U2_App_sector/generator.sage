@@ -22,11 +22,16 @@ class Generator(BaseGenerator):
                 "r_range": (14, 26),
                 "rate_range": (0.03, 0.12),
                 "unit": "inch",
+                "unit_plural": "inches",
+                "unit_abbr": "in",
+                "square_unit": "square inch",
                 "region": "region cleared by the wiper",
                 "professional": "auto detailer",
                 "rate_action": "apply a water-repellent coating",
                 "short_action": "treat",
                 "includes_radii": False,
+                "diagram_note": "For this situation the two straight sides are the wiper arm in its starting and ending positions, and the arc is the path swept out by the tip of the blade.",
+                "length_result": "the tip of the wiper blade travels about {L} inches in a single sweep",
                 "scenario_text": r"A windshield wiper pivots through an angle of <m>{angle}^\circ</m> and sweeps out a circular sector of the windshield with a radius of <m>{r}</m> inches.",
                 "length_task": "The tip of the wiper blade travels along the outer arc of the region. To the nearest inch, how far does the tip travel in a single sweep?",
             },
@@ -35,11 +40,16 @@ class Generator(BaseGenerator):
                 "r_range": (8, 25),
                 "rate_range": (0.75, 4.00),
                 "unit": "foot",
+                "unit_plural": "feet",
+                "unit_abbr": "ft",
+                "square_unit": "square foot",
                 "region": "lit region",
                 "professional": "refinishing company",
                 "rate_action": "refinish the floor",
                 "short_action": "refinish",
                 "includes_radii": True,
+                "diagram_note": "For this situation the two straight sides are the outer edges of the light beam, and the arc is the far edge of the lit region.",
+                "length_result": "about {L} feet of brass strip are needed",
                 "scenario_text": r"A spotlight in a gallery casts a beam that spreads through an angle of <m>{angle}^\circ</m> and illuminates a circular sector-shaped region of the floor with a radius of <m>{r}</m> feet.",
                 "length_task": "The gallery owner plans to install a decorative brass strip in the floor along the entire boundary of the lit region (the arc and both straight sides). To the nearest foot, how many feet of brass strip are needed?",
             },
@@ -48,11 +58,16 @@ class Generator(BaseGenerator):
                 "r_range": (6, 9),
                 "rate_range": (0.03, 0.15),
                 "unit": "inch",
+                "unit_plural": "inches",
+                "unit_abbr": "in",
+                "square_unit": "square inch",
                 "region": "slice",
                 "professional": "caterer",
                 "rate_action": "provide pizza",
                 "short_action": "buy",
                 "includes_radii": False,
+                "diagram_note": "For this situation the two straight sides are the two cuts, and the arc is the crust.",
+                "length_result": "the slice has about {L} inches of crust",
                 "scenario_text": r"A slice is cut from a round pizza whose radius is <m>{r}</m> inches. The slice is cut so that its tip, at the center of the pizza, forms an angle of <m>{angle}^\circ</m>.",
                 "length_task": "The crust runs along the outer arc of the slice. To the nearest inch, how many inches of crust does the slice have?",
             },
@@ -63,39 +78,116 @@ class Generator(BaseGenerator):
         r = Integer(random.randint(*sc["r_range"]))
         rate = round(random.uniform(*sc["rate_range"]), 2)
 
+        unit = sc["unit"]
+        unit_plural = sc["unit_plural"]
+        u = sc["unit_abbr"]
+        square_unit = sc["square_unit"]
+
         scenario_text = sc["scenario_text"].format(angle=angle, r=r)
 
         # --- Convert the angle to radians first, then use the radian formulas ---
         rad_exact = (angle / Integer(180)) * pi
         rad_float = float(rad_exact)
+        rad_disp = round(rad_float, 4)
 
         # --- Part B: area of the sector (A = 1/2 r^2 theta), then its cost ---
+        # The area is rounded to the nearest hundredth because that is the value
+        # students see and use when they multiply by the rate.
         area_exact = (Integer(1) / Integer(2)) * (r**2) * rad_exact
-        area_float = float(area_exact)
-        cost = round(area_float * rate, 2)
+        area_disp = round(float(area_exact), 2)
+        cost = round(area_disp * rate, 2)
 
         # --- Part C: arc length (s = r theta), optionally plus the two radii ---
         arc_exact = r * rad_exact
         if sc["includes_radii"]:
             length_exact = arc_exact + 2 * r
-            length_symbol = "P"
-            length_rhs = rf"r\theta + 2r = ({r})\left({latex(rad_exact)}\right) + 2({r})"
+            length_formula = r"P = r\theta + 2r"
+            length_sub = (
+                rf"({r}\ \text{{{u}}})\left({latex(rad_exact)}\right)"
+                rf" + 2({r}\ \text{{{u}}})"
+            )
         else:
             length_exact = arc_exact
-            length_symbol = "s"
-            length_rhs = rf"r\theta = ({r})\left({latex(rad_exact)}\right)"
+            length_formula = r"s = r\theta"
+            length_sub = rf"({r}\ \text{{{u}}})\left({latex(rad_exact)}\right)"
         length_rounded = round(float(length_exact))
 
-        step_convert = rf"\theta = {angle}^\circ = {angle}\left(\frac{{\pi}}{{180}}\right) = {latex(rad_exact)} \approx {round(rad_float, 4)}"
-        step_b1 = rf"A = \frac{{1}}{{2}} r^2 \theta = \frac{{1}}{{2}}({r})^2\left({latex(rad_exact)}\right) \approx {round(area_float, 2)}"
-        step_b2 = rf"{round(area_float, 2)} \cdot {rate:.2f} = {cost:.2f}"
-        step_c1 = rf"{length_symbol} = {length_rhs} \approx {length_rounded}"
+        # --- The math, written out with units at every step ---
+        step_convert = (
+            rf"\theta = {angle}^\circ = {angle}^\circ \cdot "
+            rf"\frac{{\pi\ \text{{rad}}}}{{180^\circ}} "
+            rf"= {latex(rad_exact)}\ \text{{rad}} \approx {rad_disp}\ \text{{rad}}"
+        )
+
+        step_area = (
+            rf"A = \frac{{1}}{{2}} r^2 \theta = \frac{{1}}{{2}}({r}\ \text{{{u}}})^2 "
+            rf"\left({latex(rad_exact)}\ \text{{rad}}\right) "
+            rf"\approx {area_disp}\ \text{{{u}}}^2"
+        )
+
+        # Boxed final answer for part (b): the total cost in dollars.
+        boxed_cost = r"\boxed{" + rf"\${cost:.2f}" + "}"
+
+        step_cost = (
+            rf"\text{{cost}} = {area_disp}\ \text{{{u}}}^2 \cdot "
+            rf"\frac{{\${rate:.2f}}}{{1\ \text{{{u}}}^2}} = " + boxed_cost
+        )
+
+        # Boxed final answer for part (c): the length, in its scenario's unit.
+        boxed_length = r"\boxed{" + rf"{length_rounded}\ \text{{{u}}}" + "}"
+
+        step_length = (
+            rf"{length_formula} = {length_sub} \approx " + boxed_length
+        )
+
+        # --- Part (c) prose depends on whether the boundary includes the radii ---
+        if sc["includes_radii"]:
+            part_c_intro = (
+                f"The brass strip follows the entire boundary of the {sc['region']}: "
+                f"the curved arc plus the two straight sides. The arc has length "
+                f"<m>s = r\\theta</m>, and each straight side has length equal to the "
+                f"radius, so we add <m>2r</m>."
+            )
+        else:
+            part_c_intro = (
+                f"The arc is the curved outer edge of the {sc['region']}, and its length is "
+                f"<m>s = r\\theta</m>, with <m>\\theta</m> in radians (the same value we "
+                f"used in part (b))."
+            )
 
         solution_steps = "\n".join([
+            f"    <p><em>Part (a).</em> The {sc['region']} is a circular sector, the part of a "
+            f"circle cut off by a central angle. Sketch it by marking the vertex of the angle, "
+            f"drawing the two straight sides out to a length of <m>{r}</m> {unit_plural}, and "
+            f"joining their far ends with the curved arc. Label the central angle "
+            f"<m>{angle}^\\circ</m>, both straight sides <m>{r}</m> {unit_plural}, and the arc "
+            f"<m>s</m>. {sc['diagram_note']}</p>",
+
+            f"    <p><em>Part (b).</em> The area of a sector is "
+            f"<m>A = \\frac{{1}}{{2}} r^2 \\theta</m>, but that formula only works when the "
+            f"angle is measured in radians, so we convert the given angle first.</p>",
+
             f"    <p><m>{step_convert}</m></p>",
-            f"    <p><m>{step_b1}</m></p>",
-            f"    <p><m>{step_b2}</m></p>",
-            f"    <p><m>{step_c1}</m></p>",
+
+            f"    <p>Now substitute <m>r = {r}</m> {unit_plural} and "
+            f"<m>\\theta \\approx {rad_disp}</m> radians into the area formula:</p>",
+
+            f"    <p><m>{step_area}</m></p>",
+
+            f"    <p>The {sc['professional']} charges <m>\\${rate:.2f}</m> for every "
+            f"{square_unit}, so we multiply the area by that rate. The {square_unit} units "
+            f"cancel, leaving dollars:</p>",
+
+            f"    <p><m>{step_cost}</m></p>",
+
+            f"    <p>So the total cost to {sc['short_action']} the {sc['region']} is "
+            f"<m>{boxed_cost}</m>.</p>",
+
+            f"    <p><em>Part (c).</em> {part_c_intro}</p>",
+
+            f"    <p><m>{step_length}</m></p>",
+
+            f"    <p>So {sc['length_result'].format(L=length_rounded)}.</p>",
         ])
 
         return {

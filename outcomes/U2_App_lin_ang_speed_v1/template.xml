@@ -5,9 +5,15 @@
         <p>The tires of a {{vehicle}} have a radius of <m>{{radius}}</m> in. and are turning at the rate of <m>{{rpm}}</m> revolutions per minute. How fast is the {{vehicle}} traveling in miles per hour? (Hint: <m>5280 \text{ ft} = 1 \text{ mi}</m>).</p>
     </content>
     <outtro>
+        <p>We are asked for a speed in miles per hour, but the information given is in inches and minutes, so we will keep track of the units as we go.</p>
+        <p>In one full turn, a tire rolls forward by its circumference. Since the radius is <m>{{radius}}</m> in.,</p>
         <p><m>{{step1}}</m></p>
+        <p>The tires make <m>{{rpm}}</m> turns every minute, so in one minute the {{vehicle}} travels</p>
         <p><m>{{step2}}</m></p>
+        <p>Now convert inches per minute to miles per hour by multiplying by conversion factors chosen so that every unwanted unit cancels:</p>
         <p><m>{{step3}}</m></p>
-        <p><m>{{final_sol}}</m></p>
+        <p>After the units cancel, only miles per hour remain, and simplifying the fraction gives</p>
+        <p><m>{{step4}}</m></p>
+        <p>Therefore the {{vehicle}} is traveling at approximately <m>{{final_sol}}</m>.</p>
     </outtro>
 </knowl>
