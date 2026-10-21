@@ -141,6 +141,22 @@
             </description>
         </outcome>
         <outcome>
+            <title>Fund Ident Simplify PoolA</title>
+            <slug>U2_Manip_simplify_pool_A</slug>
+            <path>outcomes/U2_Manip_simplify_pool_A</path>
+            <description>
+                Use fundamental identities to simplify.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Fund Ident Simplify PoolB</title>
+            <slug>U2_Manip_simplify_pool_B</slug>
+            <path>outcomes/U2_Manip_simplify_pool_B</path>
+            <description>
+                Use fundamental identities to simplify.
+            </description>
+        </outcome>
+        <outcome>
             <title>Find Trig from Clues</title>
             <slug>U2_Manip_clues</slug>
             <path>outcomes/U2_Manip_clues</path>

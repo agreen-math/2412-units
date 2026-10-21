@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Use fundamental trigonometric identities to simplify the expression in terms of a single trigonometric function or a constant.</p>
+        <p>In the answer box, begin by typing the names of the identities you used (choose from: quotient, reciprocal, Pythagorean, even/odd), separated by commas. Then give your simplified expression. You will see the identities the steps actually use in the feedback after you submit, so list yours before you submit.</p>
+        <p><me>{{expr}}</me></p>
+    </content>
+{{{outtro}}}
+</knowl>
