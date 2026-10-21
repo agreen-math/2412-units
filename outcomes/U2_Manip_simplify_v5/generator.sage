@@ -99,7 +99,7 @@ class Generator(BaseGenerator):
             cancelled, final = results[pair]
 
             sign = "-" if negated in odd else ""
-            expr = rf"{negated}(-{v}) {other} {v}"
+            expr = rf"\{negated}(-{v}) \{other} {v}"
 
             # Name the identity used when the factors are written in sin/cos.
             uses_q = negated in qset or other in qset
@@ -115,9 +115,9 @@ class Generator(BaseGenerator):
 
             steps = []
             if negated in odd:
-                steps.append((rf"-{negated} {v} \cdot {other} {v}", "even_odd"))
+                steps.append((rf"-\{negated} {v} \cdot \{other} {v}", "even_odd"))
             else:
-                steps.append((rf"{negated} {v} \cdot {other} {v}", "even_odd"))
+                steps.append((rf"\{negated} {v} \cdot \{other} {v}", "even_odd"))
             steps.append((sign + forms[negated] + r" \cdot " + forms[other], rewrite_code))
             steps.append((sign + cancelled, "simplify"))
             if final != cancelled:
