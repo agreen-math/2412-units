@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>For the function below, find the period, the amplitude, and the phase shift.
+        If one of these does not apply to this function, write <em>N/A</em>.</p>
+        <p><me>{{{func_tex}}}</me></p>
+        <p>Period: ______________________</p>
+        <p>Amplitude: ______________________</p>
+        <p>Phase shift: ______________________</p>
+    </content>
+    <outtro>
+{{{solution_steps}}}
+    </outtro>
+</knowl>

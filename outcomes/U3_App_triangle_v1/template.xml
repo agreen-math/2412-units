@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>{{{scenario_text}}}</p>
+        <p>(a) Sketch and label a diagram of this situation, showing every given angle
+        and distance in its correct place.</p>
+        <p>(b) {{{find_task}}}</p>
+    </content>
+    <outtro>
+{{{solution_steps}}}
+    </outtro>
+</knowl>

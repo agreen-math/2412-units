@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        {{{scenario_text}}}
+        <p>(a) {{{part_a}}}</p>
+        <p>(b) {{{part_b}}}</p>
+        <p>(c) {{{part_c}}}</p>
+        <p>(d) {{{part_d}}}</p>
+        <p>(e) {{{part_e}}}</p>
+    </content>
+    <outtro>
+{{{solution_steps}}}
+    </outtro>
+</knowl>
