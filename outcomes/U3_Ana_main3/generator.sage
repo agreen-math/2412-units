@@ -278,7 +278,29 @@ class Generator(BaseGenerator):
                 **tok
             ))
 
-        solution_steps = "\n".join("    <p>" + p + "</p>" for p in paras)
+        # ---- 5. collect the three answers ---------------------------------
+        # Each answer gets its own box, in one display element, as its own
+        # <me> rather than nested inside a <p>; nesting is what silently drops
+        # display math in spatext.
+        amp_tex = (r"\lvert A\rvert=%d" % absA) if f in HAS_AMPLITUDE \
+                  else r"\text{N/A}"
+
+        boxes = ("    <me>"
+                 r"\boxed{\text{Period} = %s}\qquad "
+                 r"\boxed{\text{Amplitude} = %s}\qquad "
+                 r"\boxed{\text{Phase shift} = %s}"
+                 "</me>"
+                 % (period_tex, amp_tex, pi_tex(shift)))
+
+        recap = ["    <p>Collecting the three answers:</p>", boxes]
+
+        if D != 0:
+            recap.append(
+                "    <p>The vertical shift <m>D=%d</m> moved the graph up or down "
+                "and appears in none of the three boxes.</p>" % D)
+
+        solution_steps = "\n".join(
+            ["    <p>" + p + "</p>" for p in paras] + recap)
 
         answer_plain = ("Period: %s; Amplitude: %s; Phase shift: %s"
                         % (pi_plain(period), amp, pi_plain(shift)))
@@ -292,6 +314,8 @@ class Generator(BaseGenerator):
             "amplitude": amp,
             "phase_shift": pi_plain(shift),
             "answer": answer_plain,
+            # Kept plain (unboxed) so anything grepping the JSON for
+            # "Period:" still matches.
             "answer_tex": (r"\text{Period: }%s,\ \text{Amplitude: }%s,\ "
                            r"\text{Phase shift: }%s"
                            % (period_tex, amp, pi_tex(shift))),

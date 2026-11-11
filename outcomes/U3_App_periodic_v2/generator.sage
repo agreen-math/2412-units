@@ -384,7 +384,7 @@ CONTEXTS = [
 # If you pin params: A must be even, h must be one of that context's
 # h_choices, and D - A must be nonnegative.
 # ===========================================================================
-VARIANT_CONTEXT = "tide"
+VARIANT_CONTEXT = "temperature"
 VARIANT_PARAMS = None
 
 

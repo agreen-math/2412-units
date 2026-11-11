@@ -217,7 +217,7 @@ Solve real-world problems involving right triangles.
                 Analyze the properties of trigonometric functions.
             </description>
         </outcome>
-       <!-- <outcome>
+       <outcome>
             <title>Analyzing Trigonometric Functions</title>
             <slug>U3_Ana_main3</slug>
             <path>outcomes/U3_Ana_main3</path>
@@ -280,8 +280,33 @@ Solve real-world problems involving right triangles.
             <description>
                 Analyze the properties of trigonometric functions.
             </description>
-        </outcome> -->
+        </outcome>
 
+       <outcome>
+            <title>Solving Right Triangles</title>
+            <slug>U3_Tri_all</slug>
+            <path>outcomes/U3_Tri_all</path>
+            <description>
+                Solve right triangles.
+            </description>
+        </outcome>
+       <outcome>
+            <title>Solving Right Triangles</title>
+            <slug>U3_Tri_inv</slug>
+            <path>outcomes/U3_Tri_inv</path>
+            <description>
+                Solve right triangles.
+            </description>
+        </outcome>
+       <outcome>
+            <title>Solving Right Triangles</title>
+            <slug>U3_Tri_no_inv</slug>
+            <path>outcomes/U3_Tri_no_inv</path>
+            <description>
+                Solve right triangles.
+            </description>
+        </outcome>
+ 
 
         <outcome>
             <title>Quiz Code</title>
@@ -299,5 +324,22 @@ Solve real-world problems involving right triangles.
                 Unique Quiz Code.
             </description>
         </outcome>
+        <outcome>
+            <title>Quiz Code</title>
+            <slug>U3_Ana</slug>
+            <path>outcomes/U3_Ana</path>
+            <description>
+                Unique Quiz Code.
+            </description>
+        </outcome>
+       <outcome>
+            <title>Quiz Code</title>
+            <slug>U3_Tri</slug>
+            <path>outcomes/U3_Tri</path>
+            <description>
+                Unique Quiz Code.
+            </description>
+        </outcome>
+         
     </outcomes>
 </bank>

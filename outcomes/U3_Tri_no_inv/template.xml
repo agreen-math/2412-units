@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>Right triangle <m>ABC</m> has the following measurements:
+        {{{given_text}}}.</p>
+        <p>(a) Sketch and label the triangle.</p>
+        <p>(b) Solve <m>\triangle ABC</m>. Round each answer to two decimal places as
+        needed.</p>
+    </content>
+    <outtro>
+{{{solution_steps}}}
+    </outtro>
+</knowl>
