@@ -306,6 +306,78 @@ Solve real-world problems involving right triangles.
                 Solve right triangles.
             </description>
         </outcome>
+       <outcome>
+            <title>Solving Right Triangles</title>
+            <slug>U3_Tri_givenAa</slug>
+            <path>outcomes/U3_Tri_givenAa</path>
+            <description>
+                Solve right triangles.
+            </description>
+        </outcome>
+       <outcome>
+            <title>Solving Right Triangles</title>
+            <slug>U3_Tri_givenab</slug>
+            <path>outcomes/U3_Tri_givenab</path>
+            <description>
+                Solve right triangles.
+            </description>
+        </outcome>
+       <outcome>
+            <title>Solving Right Triangles</title>
+            <slug>U3_Tri_givenAb</slug>
+            <path>outcomes/U3_Tri_givenAb</path>
+            <description>
+                Solve right triangles.
+            </description>
+        </outcome>
+       <outcome>
+            <title>Solving Right Triangles</title>
+            <slug>U3_Tri_givenac</slug>
+            <path>outcomes/U3_Tri_givenac</path>
+            <description>
+                Solve right triangles.
+            </description>
+        </outcome>
+       <outcome>
+            <title>Solving Right Triangles</title>
+            <slug>U3_Tri_givenAc</slug>
+            <path>outcomes/U3_Tri_givenAc</path>
+            <description>
+                Solve right triangles.
+            </description>
+        </outcome>
+       <outcome>
+            <title>Solving Right Triangles</title>
+            <slug>U3_Tri_givenBa</slug>
+            <path>outcomes/U3_Tri_givenBa</path>
+            <description>
+                Solve right triangles.
+            </description>
+        </outcome>
+       <outcome>
+            <title>Solving Right Triangles</title>
+            <slug>U3_Tri_givenBb</slug>
+            <path>outcomes/U3_Tri_givenBb</path>
+            <description>
+                Solve right triangles.
+            </description>
+        </outcome>
+       <outcome>
+            <title>Solving Right Triangles</title>
+            <slug>U3_Tri_givenbc</slug>
+            <path>outcomes/U3_Tri_givenbc</path>
+            <description>
+                Solve right triangles.
+            </description>
+        </outcome>
+       <outcome>
+            <title>Solving Right Triangles</title>
+            <slug>U3_Tri_givenBc</slug>
+            <path>outcomes/U3_Tri_givenBc</path>
+            <description>
+                Solve right triangles.
+            </description>
+        </outcome>
  
 
         <outcome>

@@ -190,7 +190,7 @@ def tri_from_pin(pin):
 #          A, B, a, b, c (C is always 90).  The remaining values are derived.
 # ===========================================================================
 VARIANT_INVERSE = None
-VARIANT_GIVEN   = None
+VARIANT_GIVEN   = "a,A"
 VARIANT_UNIT    = None
 VARIANT_PIN     = None
 
